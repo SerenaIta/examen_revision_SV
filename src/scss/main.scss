@@ -2,6 +2,8 @@
 @import "layout";
 @import "modules/example";
 
+// -----------------------------------------------------------------------
+
 @import "bootstrap/scss/bootstrap-grid";
 
 .row + .row {
@@ -14,4 +16,62 @@
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+// -----------------------------------------------------------------------
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+  background-color: #42a5f5;
+  border: solid 1px #0d47a1;
+  padding: 20px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+}
+
+.container-1 {
+  justify-content: center;
+}
+
+.container-2 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// -----------------------------------------------------------------------
+
+h2,
+p.highlight {
+  color: #1d2d44;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h3 {
+  color: #748cab;
+  font-size: 24px;
+}
+
+.highlight:first-child {
+  color: red;
 }
